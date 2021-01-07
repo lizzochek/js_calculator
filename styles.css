@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Space+Mono");
+/* quick reset so all our padding is the right size */
+* {
+  box-sizing: border-box;
+}
+
+.calculator p,
+.calc-button {
+  font-family: 'Space Mono';
+}
+
+/* add some spacing */
+body {
+  background: #F6F6F6;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+/* limit the width and center */
+.calculator {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 2px solid #111;
+  border-radius: 5px;
+}
+
+.calculator p {
+  /* reset basic form styles */
+  background: none;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+  border-bottom: 2px solid #111;
+  color: #333;
+  text-align: right;
+  font-size: 40px;
+  border-radius: 0;
+}
+
+.calc-button {
+  background: rgba(0, 0, 0, 0.5);
+  /* light background with opacity 50% */
+  border: 1px solid #111;
+  /* black border */
+  padding: 20px;
+  color: #EEE;
+  /* white text */
+  border-radius: 5px;
+  /* rounded corners */
+  font-size: 22px;
+  /* larger fonts */
+  cursor: pointer;
+  /* make it look clickable */
+}
+
+.calculator-buttons {
+  /* small spacing within our container */
+  padding: 20px;
+  /* the grid stuff! */
+  display: grid;
+  /* create 4 columns */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* add the grid gap */
+  grid-gap: 15px;
+}
+
+/* span across 3 columns */
+.is-clear {
+  grid-column: span 2;
+}
+.is-zero {
+  grid-column: span 1;
+}
+
+/* go blue */
+.is-clear {
+  background: #3572DB;
+}
+
+.is-equals {
+  background: #28D060;
+}

@@ -1,0 +1,29 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <script src="binary.js"></script>
+    <meta charset="utf-8"/>
+    <h1>Binary calculator</h1>
+  </head>
+  
+  <body>
+    <div class="boolean_calculator">
+      <!-- the input -->
+      <p id="field">0</p>
+      <!-- the buttons -->
+      <div class="calculator-buttons">
+        <button class="calc-button is-clear" id="clr" onClick="performAction(this.id)">C</button>
+        <button class="calc-button is-clear" id="clr1" onClick="performAction(this.id)">CE</button>
+        <button class="calc-button" id="/" onClick="performAction(this.id)">&divide;</button>
+  
+        <button class="calc-button" id="*" onClick="performAction(this.id)">&times;</button>
+        <button class="calc-button" id="-" onClick="performAction(this.id)">&minus;</button>
+        <button class="calc-button" id="+" onClick="performAction(this.id)">&plus;</button>
+
+        <button class="calc-button is-zero" id="0" onClick="performAction(this.id)">0</button>  
+        <button class="calc-button" id="1" onClick="performAction(this.id)">1</button>
+        <button class="calc-button" id="+-" onClick="performAction(this.id)">±</button>
+
+        <button class="calc-button is-equals" id="=" onClick="performAction(this.id)">&equals;</button>
+      </div>
+    </div>
+  </body>

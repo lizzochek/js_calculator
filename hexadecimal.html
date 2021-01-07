@@ -1,0 +1,47 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <script src="hexadecimal.js"></script>
+    <meta charset="utf-8"/>
+    <h1>Hexadecimal calculator</h1>
+  </head>
+  
+  <body>
+    <div class="calculator">
+      <!-- the input -->
+      <p id="field">0</p>
+      <!-- the buttons -->
+      <div class="calculator-buttons">
+        <button class="calc-button is-clear" id="clr" onClick="performAction(this.id)">C</button>
+        <button class="calc-button is-clear" id="clr1" onClick="performAction(this.id)">CE</button>
+        <button class="calc-button" id="/" onClick="performAction(this.id)">&divide;</button>
+  
+        <button class="calc-button" id="7" onClick="performAction(this.id)">7</button>
+        <button class="calc-button" id="8" onClick="performAction(this.id)">8</button>
+        <button class="calc-button" id="9" onClick="performAction(this.id)">9</button>
+        <button class="calc-button" id="*" onClick="performAction(this.id)">&times;</button>
+  
+        <button class="calc-button" id="4" onClick="performAction(this.id)">4</button>
+        <button class="calc-button" id="5" onClick="performAction(this.id)">5</button>
+        <button class="calc-button" id="6" onClick="performAction(this.id)">6</button>
+        <button class="calc-button" id="-" onClick="performAction(this.id)">&minus;</button>
+  
+        <button class="calc-button" id="1" onClick="performAction(this.id)">1</button>
+        <button class="calc-button" id="2" onClick="performAction(this.id)">2</button>
+        <button class="calc-button" id="3" onClick="performAction(this.id)">3</button>
+        <button class="calc-button" id="+" onClick="performAction(this.id)">&plus;</button>
+
+        <button class="calc-button" id="A" onClick="performAction(this.id)">A</button>
+        <button class="calc-button" id="B" onClick="performAction(this.id)">B</button>
+        <button class="calc-button" id="C" onClick="performAction(this.id)">C</button>
+        <button class="calc-button" id="+-" onClick="performAction(this.id)">±</button>
+
+        <button class="calc-button" id="D" onClick="performAction(this.id)">D</button>
+        <button class="calc-button" id="E" onClick="performAction(this.id)">E</button>
+        <button class="calc-button" id="F" onClick="performAction(this.id)">F</button>
+        <button class="calc-button" id="1/x" onClick="performAction(this.id)">1/x</button>
+
+        <button class="calc-button is-zero" id="0" onClick="performAction(this.id)">0</button>
+        <button class="calc-button is-equals" id="=" onClick="performAction(this.id)">&equals;</button>
+      </div>
+    </div>
+  </body>
